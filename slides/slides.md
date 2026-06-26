@@ -143,9 +143,12 @@ Edit. Restart. Wait. Nothing. Edit. Restart. Wait. Nothing.
 I'm Editing The Wrong Config?
 
 Note:
-- This is the turning point.
-- Stop assuming.
-- Investigate the running system.
+This is the question that changed everything. Not "what's wrong with my
+config?" but "am I even editing the right file?"
+
+When you've been editing and restarting and nothing changes, the hypothesis
+"wrong file" gets very compelling. So I stopped reading the documentation
+and started reading the running system.
 
 ---
 

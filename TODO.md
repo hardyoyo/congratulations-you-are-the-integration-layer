@@ -22,7 +22,7 @@ Progress tracker for the UC Tech 2026 slide notes review session.
 - [x] Slide 7 (NEW): "I Just Wanted This." — image slide added
 - [x] Slide 8: "The Metric Never Appeared."
 - [x] Slide 9: "So I Changed the Config."
-- [ ] Slide 10: "Maybe... I'm Editing The Wrong Config?"
+- [x] Slide 10: "Maybe... I'm Editing The Wrong Config?"
 - [ ] Slide 11: "`lsof`"
 - [ ] Slide 12: "...Oh, Cursewords."
 - [ ] NEW: "Two Configs."
