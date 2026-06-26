@@ -1,0 +1,13 @@
+slides:
+  theme: solarized
+  title: "Congratulations, You're the Integration Layer Now"
+  highlight_theme: stackoverflow-light
+
+revealjs:
+  transition: slide
+  history: true
+  slideNumber: "c/t"
+
+plugins:
+  - extra_css:
+      - custom.css
