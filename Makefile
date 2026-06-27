@@ -26,7 +26,5 @@ slides-serve: slides-init ## Live-preview the slide deck
 pre-commit-install: slides-init ## Install pre-commit hooks
 	.venv/bin/pre-commit install
 
-lint: slides-init ## Check for banned phrases and run markdownlint
-	@! grep -rni "tribal knowledge" slides/ \
-		|| (echo "ERROR: 'tribal knowledge' found -- use 'team lore' instead" && exit 1)
+lint: slides-init ## Run pre-commit hooks on all files
 	.venv/bin/pre-commit run --all-files

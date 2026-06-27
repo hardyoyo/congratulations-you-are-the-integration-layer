@@ -9,7 +9,8 @@ Progress tracker for the UC Tech 2026 slide notes review session.
   - "I Asked for Help." (handed both configs to ChatGPT Enterprise)
   - "Two Hours. One Maintenance Window." (it worked)
 - [ ] Add callback slide (repeat "I Just Wanted This." image) after the resolution
-- [ ] Decide fate of "The GitHub Story" slide — may be redundant once ChatGPT slides are added
+- [ ] Decide fate of "The GitHub Story" slide —
+      may be redundant once ChatGPT slides are added
 
 ## Slides: notes review
 
