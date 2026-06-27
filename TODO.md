@@ -18,7 +18,8 @@ _45-minute talk. Pace accordingly._
 ## Structural changes pending
 
 - [ ] Add 3 new slides after "...Oh, Cursewords." (ChatGPT Enterprise moment):
-  - "Two Configs." (what lsof revealed)
+  - "Two Configs." — show what `lsof` revealed: the documented
+    config AND the hidden one side by side; the suspicion was right
   - "I Asked for Help." (handed both configs to ChatGPT Enterprise)
   - "Two Hours. One Maintenance Window." (it worked)
 - [ ] Add callback slide (repeat "I Just Wanted This." image) after the resolution
@@ -48,6 +49,26 @@ _45-minute talk. Pace accordingly._
       ownership decision tree, GitOps workflow, pipeline
       templates, and start-small guidance
 
+## Mermaid diagrams
+
+mkslides renders Mermaid natively. This talk is begging for diagrams
+in several places — a well-placed flowchart or sequence diagram would
+clarify ideas that take paragraphs to explain in words.
+
+- [ ] **Old World vs. New World (slides 17–18)** — side-by-side
+      flowcharts: tight coupling (App → Vendor Agent → Vendor Backend)
+      vs. decoupled (App → OTel SDK → Collector → Backends). Makes
+      the architectural shift land instantly.
+- [ ] **Collector Architecture (new slide after "This Is The Design")**
+      — receivers/processors/exporters as a Mermaid flowchart, with
+      pipelines connecting them. The natural diagram moment.
+- [ ] **Config merge order** — a diagram showing default config →
+      base config → overlay config → env var substitution → effective
+      config. Visualizes the "which config am I editing?" mystery.
+- [ ] **GitHub → Datadog pipeline** — end-to-end: GitHub OTLP endpoint
+      → Collector receiver → processor chain → Datadog exporter.
+      Makes the abstract pipeline concrete.
+
 ## Slides: notes review
 
 - [x] Slide 1: Title — "Congratulations, You're the Integration Layer Now"
@@ -60,7 +81,9 @@ _45-minute talk. Pace accordingly._
 - [x] Slide 8: "The Metric Never Appeared."
 - [x] Slide 9: "So I Changed the Config."
 - [x] Slide 10: "Maybe... I'm Editing The Wrong Config?"
-- [ ] Slide 11: "`lsof`"
+- [ ] Slide 11: "`lsof`" — notes now frame it as debugging
+      suspicion, not architecture knowledge; key line: "I didn't
+      know about OTel layering. I just suspected a second config."
 - [ ] Slide 12: "...Oh, Cursewords."
 - [ ] NEW: "Two Configs."
 - [ ] NEW: "I Asked for Help."

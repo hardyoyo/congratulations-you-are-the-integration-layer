@@ -155,9 +155,13 @@ and started reading the running system.
 # `lsof`
 
 Note:
-- Find the Collector process.
-- Inspect open files.
-- Discover additional configuration.
+I didn't know about OTel layering yet. I just had a hypothesis:
+what if there's *another* config file the Collector is reading
+that I don't know about?
+
+`lsof -p <collector_pid>` shows every open file. If my config
+wasn't the only one, it would show up here. No architecture
+diagram needed — just suspicion and the right tool to check it.
 
 ---
 
