@@ -400,3 +400,14 @@ Note:
 ---
 
 # Questions?
+
+---
+
+# Acknowledgments
+
+Big Pickle — for being a rubber duck and a second pair of eyes.
+
+Note:
+Shout out to Big Pickle, the AI assistant that helped me think
+through the structure of this talk, reframe the lsof moment,
+and generally make sure the notes were worth reading.

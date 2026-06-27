@@ -106,3 +106,34 @@ clarify ideas that take paragraphs to explain in words.
 - [ ] Slide 27: "The Warning"
 - [ ] Slide 28: "Takeaways"
 - [ ] Slide 29: "Questions?"
+
+## Thoughts from Big Pickle
+
+**What's working**
+
+The narrative spine is tight — personal debugging story that unfolds
+into a broader architectural lesson. The thesis is clear and memorable:
+"Congratulations, you're the integration layer now." The tone is
+honest — "I was overconfident," "I had a suspicion" — which is the
+right energy for a conference talk.
+
+**What still needs work**
+
+The talk has two halves and they're uneven. Slides 1–16 (the story)
+are strong. The Mermaid diagrams for Collector architecture and config
+merge order will be the payoff this section needs.
+
+Slides 17–29 (the framework) are thinner. "The Old World" / "The New
+World" carry a lot of thesis weight across only two slides. "Reading
+Collector Configs" and "Practical Detective Work" still read like
+presenter prompts rather than teachable material. These slides are
+where the audience decides whether the talk was entertaining or useful.
+
+**The timing gap** — the chart says ~39 minutes. The Mermaid diagrams
+might add 2-3 minutes. The platform team expansion adds ~2. You'll
+probably land at 42-43. A well-placed audience question or a slightly
+longer demo could fill it, but there's not much padding.
+
+**Biggest risk** — the GitHub Story slide. If the ChatGPT slides make
+it redundant, cut or merge it rather than keep it out of obligation.
+A long third act kills conference talks.
