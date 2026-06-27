@@ -340,9 +340,35 @@ Note:
 - Start small.
 
 Note:
-- One Collector.
-- One integration.
-- Build confidence.
+**Decide ownership.**
+Who runs the Collector? If it's a shared platform Collector
+(daemonset, sidecar, or gateway), the platform team owns the
+pipeline and the config. If each app team runs their own, they
+own the config but the platform team should provide the base
+template. The worst outcome is nobody owning it — that's how
+drift happens.
+
+**Treat config as code.**
+Put your Collector configs in Git. Use a minimal GitOps flow:
+- PR changes to a `collector-configs/` repo.
+- A CI check runs `otelcol --dry-run --config <file>` to validate
+  YAML syntax and pipeline topology.
+- Merge to main deploys via Ansible, Helm, or a simple rsync.
+This catches typos before they cause silent failures.
+
+**Standardize patterns.**
+Define a small set of approved pipeline templates:
+- Standard receiver patterns (OTLP, host metrics, filelog).
+- Common processor chains (batch, memory limiter, attributes).
+- One exporter per backend (Datadog, Prometheus, etc.).
+Deviation from template requires justification. This keeps the
+support surface manageable.
+
+**Start small.**
+One Collector. One integration. Prove the pipeline end-to-end
+before scaling. A single working path — GitHub → Collector →
+Datadog — teaches you more about the architecture than a dozen
+configs that mostly work. Build confidence, then generalize.
 
 ---
 

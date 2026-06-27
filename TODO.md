@@ -2,6 +2,19 @@
 
 Progress tracker for the UC Tech 2026 slide notes review session.
 
+## Timing
+
+_45-minute talk. Pace accordingly._
+
+| Section | Slides | Est. time |
+|---|---|---|
+| Setup / "I Just Wanted This" | 1–10 | 10 min |
+| Debugging story + `lsof` demo | 11–12 + 3 new | 8 min |
+| The realization + Collector Architecture | 13–16 + new | 8 min |
+| The framework (Old World → Congrats.) | 17–21 | 5 min |
+| Practical advice + GitHub Story | 22–29 | 8 min |
+| **Total** | | **~39 min** |
+
 ## Structural changes pending
 
 - [ ] Add 3 new slides after "...Oh, Cursewords." (ChatGPT Enterprise moment):
@@ -9,8 +22,31 @@ Progress tracker for the UC Tech 2026 slide notes review session.
   - "I Asked for Help." (handed both configs to ChatGPT Enterprise)
   - "Two Hours. One Maintenance Window." (it worked)
 - [ ] Add callback slide (repeat "I Just Wanted This." image) after the resolution
+- [ ] Add OTel Collector architecture slide after "This Is The Design." —
+      receivers → processors → exporters, pipelines, config layering
+- [ ] Add lsof demo or screen recording or screencap alongside "`lsof`" slide —
+      show the actual output, the second config path, make it concrete
 - [ ] Decide fate of "The GitHub Story" slide —
       may be redundant once ChatGPT slides are added
+
+## Technical depth gaps
+
+- [ ] "Reading Collector Configs" notes — each of the 5 questions
+      (distribution, defaults, overlay, deployment, runtime) needs a
+      paragraph walkthrough so a presenter can explain them credibly
+- [ ] "Practical Detective Work" notes — flesh out: `lsof -p <pid>`,
+      `/proc/<pid>/cmdline`, comparing documented vs effective config,
+      finding overlay files
+- [ ] "This Is The Design." notes — go beyond "composability" bullet:
+      explain how the Collector assembles a pipeline from multiple
+      config files, merge order, environment variable substitution
+- [ ] "I Finally Understood" notes — contrast the user's goal (get
+      metrics) with OTel's goal (interoperability); explain why the
+      Collector's architecture makes sense once you stop treating it
+      like a vendor agent
+- [x] "What Platform Teams Should Do" — expanded notes with
+      ownership decision tree, GitOps workflow, pipeline
+      templates, and start-small guidance
 
 ## Slides: notes review
 
@@ -31,6 +67,7 @@ Progress tracker for the UC Tech 2026 slide notes review session.
 - [ ] NEW: "Two Hours. One Maintenance Window."
 - [ ] Slide 13: "The Docs Weren't Wrong."
 - [ ] Slide 14: "This Is The Design."
+- [ ] NEW: "Collector Architecture" — receivers/pipelines/exporters, config layering
 - [ ] Slide 15: "Suddenly... Everything Made Sense."
 - [ ] Slide 16: "I Finally Understood"
 - [ ] Slide 17: "The Old World"
