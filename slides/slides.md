@@ -33,7 +33,8 @@ I had one observability task: get GitHub Enterprise metrics into Datadog.
 
 I manage GitHub Enterprise Server at UCSF. We have Datadog. GitHub had
 just added OpenTelemetry support. The docs existed. This seemed like a
-nice quick maintenance window project. Turn on the thing, look at the thing, bask in glory.
+nice quick maintenance window project. Turn on the thing, look at
+the thing, bask in glory.
 
 I was wrong.
 
@@ -49,7 +50,9 @@ with it. I ignored it because vendors handled observability for me. The agent
 took care of it. The integration took care of it. I didn't have to think about
 the pipeline.
 
-Quick note: everyone in observability calls it OTel. I'll use both from here on, but please don't zing me on Jargon if I say OTel, becuase that's what everyone calls it.
+Quick note: everyone in observability calls it OTel. I'll use both
+from here on, but please don't zing me on jargon if I say OTel,
+because that's what everyone calls it.
 
 That was fine. Until it wasn't.
 
@@ -190,7 +193,8 @@ Two --config files.
 /etc/otelcol-contrib/config.yaml — GitHub's default, shipped with GHES.
 /data/user/common/otelcol.yaml — mine. My config.
 
-I had been editing my config the whole time without knowing it was an *overlay*: there was
+I had been editing my config the whole time without knowing it was
+an *overlay*: there was
 a base config underneath it. A config I had never seen. A config that
 was quietly overriding everything I thought I was doing.
 
