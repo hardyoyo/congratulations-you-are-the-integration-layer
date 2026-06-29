@@ -146,7 +146,7 @@ Note:
 This is the question that changed everything. Not "what's wrong with my
 config?" but "am I even editing the right file?"
 
-When you've been editing and restarting and nothing changes, the hypothesis
+When you've been editing and restarting and nothing changes, the hunch
 "wrong file" gets very compelling. So I stopped reading the documentation
 and started reading the running system.
 
@@ -155,7 +155,7 @@ and started reading the running system.
 # `lsof`
 
 Note:
-I had a hypothesis: what if there's another config file the Collector
+I had a hunch: what if there's another config file the Collector
 is reading that I don't know about? `lsof -p <pid>` shows every open
 file. If my config wasn't the only one, it would show up here.
 

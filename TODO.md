@@ -171,3 +171,9 @@ A long third act kills conference talks.
 - Gartner and CAMSS are already cited in slide 4 ("What Changed?")
 - The rest have informed the talk but are not yet explicitly referenced
 - Consider whether any deserve a callout in the Acknowledgments slide
+
+## Readability review
+
+- [ ] Do a full pass on all speaker notes looking for multi-syllable words
+      that might trip up when reading aloud. Replace with simpler alternatives.
+      Known fixes so far: "hypothesis" -> "hunch"
