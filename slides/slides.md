@@ -180,6 +180,8 @@ bytes with newlines. This is a good trick, I kinda love it. And look at what we 
 
 # ...Oh, Cursewords.
 
+two config files
+
 ![Two config files revealed](images/two-configs-zoom.png)
 
 Note:
