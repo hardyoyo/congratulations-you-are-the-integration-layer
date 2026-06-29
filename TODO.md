@@ -137,3 +137,10 @@ longer demo could fill it, but there's not much padding.
 **Biggest risk** — the GitHub Story slide. If the ChatGPT slides make
 it redundant, cut or merge it rather than keep it out of obligation.
 A long third act kills conference talks.
+
+## Acknowledgments slide
+
+- [ ] Add Acknowledgments slide at the end once all images are finalized
+  - Image credits (at minimum: GHES_metrics_Datadog.png — check if others are added)
+  - Sources: Gartner Fast Answer, CAMSS Assessment
+  - Any other credits
