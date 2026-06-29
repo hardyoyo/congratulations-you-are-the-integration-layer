@@ -64,13 +64,13 @@ The industry.
 > "Supported by more than 40 observability vendors" — CAMSS, 2024
 
 Note:
-They told me this isn't a scientific conference, I don't need receipts.
+The organizers told us this isn't a scientific conference, WeI don't need receipts.
 
-But I have receipts. Gartner calls it early mainstream, with 20 to 50 percent
-market penetration. The European Commission's CAMSS assessment found it
+But I have receipts. Gartner calls OTel "early mainstream," with 20 to 50 percent
+market penetration. The European Commission's CAMSS assessment found OTel
 supported by more than 40 observability vendors.
 
-The point is: the industry has changed. This isn't a niche project anymore.
+The point is: the industry has changed. This isn't a side project anymore.
 This is infrastructure.
 
 ---
