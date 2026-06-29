@@ -7,7 +7,7 @@ author: "Hardy Pottinger"
 
 ### OpenTelemetry in the UC Stack
 
-### UC Tech 2026
+### Hardy Pottinger | UC Tech 2026
 
 [![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
 
@@ -19,7 +19,7 @@ the name. Some of you have used it. Some of you are actively avoiding it.
 Many of you are about to be responsible for it whether you planned to be or not.
 
 This is the warning I wish someone had given me before I spent a week on a
-problem that took one afternoon to solve — once I understood what was
+problem that took one 4am maintenance window to solve — once I understood what was
 actually happening.
 
 ---
@@ -31,9 +31,9 @@ In Datadog.
 Note:
 I had one observability task: get GitHub Enterprise metrics into Datadog.
 
-We had GitHub Enterprise Server running at UCSF. We had Datadog. GitHub had
+I manage GitHub Enterprise Server at UCSF. We have Datadog. GitHub had
 just added OpenTelemetry support. The docs existed. This seemed like a
-Tuesday afternoon project.
+nice quick maintenance window project. Turn on the thing, look at the thing, bask in glory.
 
 I was wrong.
 
@@ -41,7 +41,7 @@ I was wrong.
 
 # OpenTelemetry Isn't New.
 
-We are.
+I was.
 
 Note:
 Most people in this room have heard of OpenTelemetry. Some have experimented
@@ -49,7 +49,7 @@ with it. I ignored it because vendors handled observability for me. The agent
 took care of it. The integration took care of it. I didn't have to think about
 the pipeline.
 
-Quick note: everyone in the field calls it OTel. I'll use both from here on.
+Quick note: everyone in observability calls it OTel. I'll use both from here on, but please don't zing me on Jargon if I say OTel, becuase that's what everyone calls it.
 
 That was fine. Until it wasn't.
 
@@ -176,9 +176,7 @@ Note:
 Every Linux process has a /proc entry. /proc/<pid>/cmdline contains
 the exact command line the process was started with — every flag,
 every argument. The `tr` command makes it readable by replacing null
-bytes with newlines.
-
-This one I did not learn in school.
+bytes with newlines. This is a good trick, I kinda love it. And look at what we found...
 
 ---
 
@@ -422,5 +420,3 @@ Note:
 ---
 
 # Questions?
-
-
