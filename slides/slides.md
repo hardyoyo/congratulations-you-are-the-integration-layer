@@ -155,22 +155,42 @@ and started reading the running system.
 # `lsof`
 
 Note:
-I didn't know about OTel layering yet. I just had a hypothesis:
-what if there's *another* config file the Collector is reading
-that I don't know about?
+I had a hypothesis: what if there's another config file the Collector
+is reading that I don't know about? `lsof -p <pid>` shows every open
+file. If my config wasn't the only one, it would show up here.
 
-`lsof -p <collector_pid>` shows every open file. If my config
-wasn't the only one, it would show up here. No architecture
-diagram needed — just suspicion and the right tool to check it.
+Except it didn't. lsof showed me sockets, connections, the binary —
+but no config files. Go processes read config at startup and close the
+file descriptors immediately. The config is in memory by the time you
+look. Dead end. Try something else.
+
+---
+
+# Read the Running System
+
+`cat /proc/<pid>/cmdline | tr '\0' '\n'`
+
+Note:
+Every Linux process has a /proc entry. /proc/<pid>/cmdline contains
+the exact command line the process was started with — every flag,
+every argument. The `tr` command makes it readable by replacing null
+bytes with newlines.
+
+This one I did not learn in school.
 
 ---
 
 # ...Oh, Cursewords.
 
 Note:
-- Documented config was an overlay.
-- There were other configuration layers.
-- Immediate realization.
+Two --config flags.
+
+/etc/otelcol-contrib/config.yaml — GitHub's default, shipped with GHES.
+/data/user/common/otelcol.yaml — mine. My overlay.
+
+I had been editing my overlay the whole time without knowing there was
+a base config underneath it. A config I had never seen. A config that
+was quietly overriding everything I thought I was doing.
 
 ---
 

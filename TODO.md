@@ -86,7 +86,7 @@ clarify ideas that take paragraphs to explain in words.
 - [x] Slide 11: "`lsof`" — done by Big Pickle (notes kept)
       suspicion, not architecture knowledge; key line: "I didn't
       know about OTel layering. I just suspected a second config."
-- [ ] Slide 12: "...Oh, Cursewords."
+
 - [ ] NEW: "Two Configs."
 - [ ] NEW: "I Asked for Help."
 - [ ] NEW: "Two Hours. One Maintenance Window."
