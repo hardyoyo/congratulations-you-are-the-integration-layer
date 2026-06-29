@@ -237,6 +237,13 @@ Note:
 
 ---
 
+![GitHub Enterprise metrics in Datadog](images/GHES_metrics_Datadog.png)
+
+Note:
+There it is.
+
+---
+
 # I Finally Understood
 
 OpenTelemetry wasn't solving my problem.

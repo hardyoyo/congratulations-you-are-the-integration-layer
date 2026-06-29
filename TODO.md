@@ -25,11 +25,11 @@ _45-minute talk. Pace accordingly._
 - [ ] Add callback slide (repeat "I Just Wanted This." image) after the resolution
 - [ ] Add OTel Collector architecture slide after "This Is The Design." —
       receivers → processors → exporters, pipelines, config layering
-- [ ] Capture lsof screenshot for slide 11 — shows process info but NO config
-      files (that is the point); save to images/
-- [ ] Capture cat /proc/<pid>/cmdline screenshot for "Read the Running System"
-      slide — shows both --config flags; save to images/
-- [ ] Wire both screenshots into slides once filenames are known
+- [x] Capture lsof screenshot for slide 11 — shows process info but NO config
+      files (that is the point); saved to slides/images/lsof-fail.png
+- [x] Capture cat /proc/<pid>/cmdline screenshot for "Read the Running System"
+      slide — shows both --config flags; saved to slides/images/cat-proc-cmdline.png
+- [x] Wire both screenshots into slides
 - [ ] Decide fate of "The GitHub Story" slide —
       may be redundant once ChatGPT slides are added
 
@@ -84,14 +84,13 @@ clarify ideas that take paragraphs to explain in words.
 - [x] Slide 8: "The Metric Never Appeared."
 - [x] Slide 9: "So I Changed the Config."
 - [x] Slide 10: "Maybe... I'm Editing The Wrong Config?"
-- [x] Slide 11: "`lsof`" — done by Big Pickle (notes kept)
-      suspicion, not architecture knowledge; key line: "I didn't
-      know about OTel layering. I just suspected a second config."
-
+- [x] Slide 11: "`lsof`" — notes updated, screenshot added
+- [x] NEW: "Read the Running System" — added with screenshot
+- [x] Slide 12: "...Oh, Cursewords." — notes, image, subtitle added
+- [x] Slide 13: "The Docs Weren't Wrong." — notes written and expanded
 - [ ] NEW: "Two Configs."
 - [ ] NEW: "I Asked for Help."
 - [ ] NEW: "Two Hours. One Maintenance Window."
-- [ ] Slide 13: "The Docs Weren't Wrong."
 - [ ] Slide 14: "This Is The Design."
 - [ ] NEW: "Collector Architecture" — receivers/pipelines/exporters, config layering
 - [ ] Slide 15: "Suddenly... Everything Made Sense."
