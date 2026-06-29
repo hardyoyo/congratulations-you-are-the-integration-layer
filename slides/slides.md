@@ -154,6 +154,8 @@ and started reading the running system.
 
 # `lsof`
 
+![lsof output — no config files](../images/lsof-fail.png)
+
 Note:
 I had a hunch: what if there's another config file the Collector
 is reading that I don't know about? `lsof -p <pid>` shows every open
