@@ -104,7 +104,7 @@ I walked into it completely blind. This confidence was entirely unearned.
 
 ---
 
-![GitHub Enterprise metrics in Datadog](../images/GHES_metrics_Datadog.png)
+![GitHub Enterprise metrics in Datadog](images/GHES_metrics_Datadog.png)
 
 Note:
 This. That's it. GitHub Enterprise system metrics, flowing into Datadog.
@@ -152,7 +152,7 @@ and started reading the running system.
 
 # `lsof`
 
-![lsof output — no config files](../images/lsof-fail.png)
+![lsof output — no config files](images/lsof-fail.png)
 
 Note:
 I had a hunch: what if there's another config file the Collector
@@ -168,7 +168,7 @@ look. Dead end. Try something else.
 
 # Read the Running System
 
-![cat /proc/pid/cmdline reveals both config paths](../images/cat-proc-cmdline.png)
+![cat /proc/pid/cmdline reveals both config paths](images/cat-proc-cmdline.png)
 
 Note:
 Every Linux process has a /proc entry. /proc/<pid>/cmdline contains
