@@ -185,12 +185,12 @@ two config files
 ![Two config files revealed](images/two-configs-zoom.png)
 
 Note:
-Two --config flags.
+Two --config files.
 
 /etc/otelcol-contrib/config.yaml — GitHub's default, shipped with GHES.
-/data/user/common/otelcol.yaml — mine. My overlay.
+/data/user/common/otelcol.yaml — mine. My config.
 
-I had been editing my overlay the whole time without knowing there was
+I had been editing my config the whole time without knowing it was an *overlay*: there was
 a base config underneath it. A config I had never seen. A config that
 was quietly overriding everything I thought I was doing.
 
@@ -201,9 +201,14 @@ was quietly overriding everything I thought I was doing.
 They weren't complete.
 
 Note:
-- Vendor documented their opinion.
-- Collector already had defaults.
-- Overlay model is intentional.
+The GitHub docs told me exactly what to put in my config file.
+They were accurate. They just didn't mention that the Collector
+was already running with a base config underneath mine.
+
+That's not a documentation bug. It's a documentation gap. The
+vendor documented their overlay. They didn't document the whole
+stack. And if you don't know the stack has layers, the docs
+look complete when they aren't.
 
 ---
 
