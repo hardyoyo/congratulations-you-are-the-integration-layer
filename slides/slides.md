@@ -170,7 +170,7 @@ look. Dead end. Try something else.
 
 # Read the Running System
 
-`cat /proc/<pid>/cmdline | tr '\0' '\n'`
+![cat /proc/pid/cmdline reveals both config paths](../images/cat-proc-cmdline.png)
 
 Note:
 Every Linux process has a /proc entry. /proc/<pid>/cmdline contains
