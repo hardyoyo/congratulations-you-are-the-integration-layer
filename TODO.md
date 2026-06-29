@@ -81,7 +81,7 @@ clarify ideas that take paragraphs to explain in words.
 - [x] Slide 8: "The Metric Never Appeared."
 - [x] Slide 9: "So I Changed the Config."
 - [x] Slide 10: "Maybe... I'm Editing The Wrong Config?"
-- [ ] Slide 11: "`lsof`" — notes now frame it as debugging
+- [x] Slide 11: "`lsof`" — done by Big Pickle (notes kept)
       suspicion, not architecture knowledge; key line: "I didn't
       know about OTel layering. I just suspected a second config."
 - [ ] Slide 12: "...Oh, Cursewords."
