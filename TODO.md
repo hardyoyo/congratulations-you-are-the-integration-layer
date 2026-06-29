@@ -144,3 +144,28 @@ A long third act kills conference talks.
   - Image credits (at minimum: GHES_metrics_Datadog.png — check if others are added)
   - Sources: Gartner Fast Answer, CAMSS Assessment
   - Any other credits
+
+## Sources
+
+- [ ] Review whether each source has been used enough in the slides
+
+### Sources in resources folder
+
+| File | Source |
+|---|---|
+| `Gartner-Fast-Answer-...txt` | Gartner Fast Answer: "What should I know about OpenTelemetry?" |
+| `CAMSS_Assessment_Summary_...pdf` | CAMSS Assessment: OpenTelemetry EIF Scenario v1.0 |
+| `controltheory.com_...md` | Control Theory: OpenTelemetry Collector Deployment Patterns |
+| `datadoghq.com_blog_...md` | Datadog Blog: OTel Collector Distributions |
+| `logz.io_observability-pulse-2024.md` | Logz.io: Observability Pulse 2024 |
+| `oneuptime.com_blog_...md` | OneUptime: GitOps OpenTelemetry Collector Configuration (2026) |
+| `opentelemetry-collector-builder-README.md` | OpenTelemetry Collector Builder README |
+| `opentelemetry.io_docs_collector_configuration.md` | OpenTelemetry.io: Collector Configuration docs |
+| `opentelemetry.io_docs_security_config-best-practices.md` | OpenTelemetry.io: Security Config Best Practices |
+| `site24x7.com_blog_...md` | Site24x7: 4 Common OpenTelemetry Challenges |
+
+### Notes
+
+- Gartner and CAMSS are already cited in slide 4 ("What Changed?")
+- The rest have informed the talk but are not yet explicitly referenced
+- Consider whether any deserve a callout in the Acknowledgments slide
