@@ -71,7 +71,7 @@ market penetration. The European Commission's CAMSS assessment found OTel
 supported by more than 40 observability vendors.
 
 The point is: the industry has changed. This isn't a side project anymore.
-This is infrastructure.
+This is how it's done.
 
 ---
 
