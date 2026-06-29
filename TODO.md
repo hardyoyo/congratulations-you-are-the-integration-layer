@@ -25,10 +25,11 @@ _45-minute talk. Pace accordingly._
 - [ ] Add callback slide (repeat "I Just Wanted This." image) after the resolution
 - [ ] Add OTel Collector architecture slide after "This Is The Design." —
       receivers → processors → exporters, pipelines, config layering
-- [ ] Stage and capture lsof screenshot for slide 11 — run lsof against the
-      collector process, capture output showing both config file paths
-- [ ] Stage and capture zoom-in of the two config files for slide 12
-      ("...Oh, Cursewords.") — make the layering visible
+- [ ] Capture lsof screenshot for slide 11 — shows process info but NO config
+      files (that is the point); save to images/
+- [ ] Capture cat /proc/<pid>/cmdline screenshot for "Read the Running System"
+      slide — shows both --config flags; save to images/
+- [ ] Wire both screenshots into slides once filenames are known
 - [ ] Decide fate of "The GitHub Story" slide —
       may be redundant once ChatGPT slides are added
 
