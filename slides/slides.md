@@ -104,8 +104,6 @@ I walked into it completely blind. This confidence was entirely unearned.
 
 ---
 
-# I Just Wanted This.
-
 ![GitHub Enterprise metrics in Datadog](../images/GHES_metrics_Datadog.png)
 
 Note:
