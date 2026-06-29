@@ -210,6 +210,10 @@ vendor documented their overlay. They didn't document the whole
 stack. And if you don't know the stack has layers, the docs
 look complete when they aren't.
 
+This isn't even unusual. Web developers expect a config file to be
+the whole story. Observability engineers know to ask: what is the
+Collector already doing? I just didn't know which mindset I needed yet.
+
 ---
 
 # This Is The Design.
