@@ -116,7 +116,7 @@ Nothing exotic. Just a dashboard with data in it.
 
 Note:
 I configured the integration. I waited. I refreshed. Nothing. Not an error.
-Not a partial result. Just nothing. An empty graph where metrics should be.
+Not a partial result. Just nothing. An empty space where metrics should be.
 
 OK. I probably made a typo. I re-read the documentation. I re-configured.
 I waited again.
@@ -153,11 +153,11 @@ and started reading the running system.
 # `lsof`
 
 ![lsof output — no config files](images/lsof-fail.png)
-
+s
 Note:
 I had a hunch: what if there's another config file the Collector
 is reading that I don't know about? `lsof -p <pid>` shows every open
-file. If my config wasn't the only one, it would show up here.
+file for a process. If my config wasn't the only one, it would show up here.
 
 Except it didn't. lsof showed me sockets, connections, the binary —
 but no config files. Go processes read config at startup and close the
@@ -171,7 +171,7 @@ look. Dead end. Try something else.
 ![cat /proc/pid/cmdline reveals both config paths](images/cat-proc-cmdline.png)
 
 Note:
-Every Linux process has a /proc entry. /proc/<pid>/cmdline contains
+Every Linux process has a /proc entry. /proc/process-id/cmdline contains
 the exact command line the process was started with — every flag,
 every argument. The `tr` command makes it readable by replacing null
 bytes with newlines. This is a good trick, I kinda love it. And look at what we found...
@@ -179,6 +179,8 @@ bytes with newlines. This is a good trick, I kinda love it. And look at what we 
 ---
 
 # ...Oh, Cursewords.
+
+![Two config files revealed](images/two-configs-zoom.png)
 
 Note:
 Two --config flags.
