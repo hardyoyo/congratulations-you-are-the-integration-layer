@@ -372,8 +372,13 @@ That's agency. And responsibility.
 - Configuration
 
 Note:
-- Not a complaint.
-- Just reality.
+Nobody put this list on a roadmap. Nobody had a sprint planning
+meeting and said "let's own the telemetry pipeline this quarter."
+
+It just showed up. The vendors shipped OpenTelemetry support and
+assumed someone would run the middle. That someone is us.
+
+Again: not a complaint. Just a heads up.
 
 ---
 
