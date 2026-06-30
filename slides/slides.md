@@ -261,8 +261,9 @@ process metrics — all running, all generating data. The Collector just
 needed to find them and route their output to Datadog. It didn't
 install anything. It collected what was already there.
 
-That's what OpenTelemetry optimizes for. Not instrumentation.
-Interoperability.
+OpenTelemetry isn't wiring up new sensors, it's just putting all
+existing sensor data in a nice neat pile for your observability
+tooling to find.
 
 ---
 
