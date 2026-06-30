@@ -479,6 +479,7 @@ Better to know that going in than find out at 4am.
 # Takeaways
 
 - OpenTelemetry puts existing sensor data in a pile for your tooling to find.
+- Your vendor's config is "the pile"
 - The Collector config is layered. Find all the layers first.
 - Use `/proc/\<pid\>/cmdline` to see what your Collector is actually reading.
 - Hand the vendor config + your goals to an AI agent. Ask for help.
