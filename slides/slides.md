@@ -267,14 +267,28 @@ tooling to find.
 
 ---
 
-# Suddenly...
+# Discovering OpenTelemetry
 
-Everything Made Sense.
+Window 1: just configure the thing.
+
+*(fail)*
+
+Window 2: wait... maybe I'm editing the wrong config?
+
+Oh. It's in layers.
 
 Note:
-- Same afternoon everything clicked.
-- Mental model changed.
-- Configuration started behaving predictably.
+First window: walked in confident. Edited the config, restarted,
+waited. Nothing. Walked away at 6am with nothing to show.
+
+Second window: came back with different questions. Used lsof.
+Used /proc/cmdline. Found two config files. Handed both to
+ChatGPT Enterprise -- here's what I have, here's what I want,
+help me figure this out. Mental model shifted mid-process.
+Two hours later, metrics were flowing into Datadog.
+
+The week of confusion wasn't wasted. But it was optional.
+The system was never broken. I just didn't understand it yet.
 
 ---
 
@@ -282,19 +296,6 @@ Note:
 
 Note:
 There it is.
-
----
-
-# I Finally Understood
-
-OpenTelemetry wasn't solving my problem.
-
-It was solving interoperability.
-
-Note:
-- My goal: metrics.
-- OTel's goal: interoperability.
-- Those overlap, but they're different.
 
 ---
 
