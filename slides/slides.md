@@ -394,68 +394,6 @@ have a look at the configs so you know what it's like.
 
 ---
 
-# The Recipe
-
-1. Assume your vendor has their own config.
-2. Use `/proc/\<pid\>/cmdline` to find it.
-3. Take: vendor config + your overlay + your goals.
-4. Hand it to an AI agent. Ask for help.
-
-Note:
-Don't do what I did. Don't walk into a maintenance window blind.
-
-Assume your vendor ships a default Collector config. Find it first.
-Use `cat /proc/\<pid\>/cmdline | tr '' '
-'` -- you already
-know this trick.
-
-Then take that vendor config, your baseline overlay, and a clear
-description of what you want to get out of it. Hand all of it to
-an AI agent and ask for help structuring your overlay.
-
-It took me two 4am maintenance windows. With this approach, it
-should take you one.
-
-One more thing: be careful with API tokens. Redact them before
-you paste anything into a chat window.
-
----
-
-# Platform Teams Should
-
-- Decide ownership.
-- Treat config as code.
-- Standardize patterns.
-- Start small.
-
-Note:
-**Decide ownership.**
-Who runs the Collector? If it's a shared platform Collector
-(daemonset, sidecar, or gateway), the platform team owns the
-pipeline and the config. If each app team runs their own, they
-own the config but the platform team should provide the base
-template. The worst outcome is nobody owning it — that's how
-drift happens.
-
-**Treat config as code.**
-Put your Collector configs in Git.
-- Use PRs.
-- Use CI -- at least a lint check.
-- Use CD if you can, but at least script your deployment somehow.
-
-**Standardize patterns.**
-Define a small set of approved pipeline templates:
-- Standard receiver patterns (OTLP, host metrics, filelog).
-- Common processor chains (batch, memory limiter, attributes).
-- One exporter per backend (Datadog, Prometheus, etc.).
-Deviation from template requires justification. This keeps the
-support surface manageable.
-
-**Start small.**
-One Collector. One integration. Prove the pipeline end-to-end
-before scaling. A single working path — GitHub → Collector →
-Datadog — teaches you more about the architecture than a dozen
-configs that mostly work. Build confidence, then generalize.
 
 ---
 
@@ -466,7 +404,15 @@ configs that mostly work. Build confidence, then generalize.
 - The Collector config is layered. Find all the layers first.
 - Use `/proc/\<pid\>/cmdline` to see what your Collector is actually reading.
 - Hand the vendor config + your goals to an AI agent. Ask for help.
-- Watch out for API tokens.
+
+Note:
+Don't do what I did. Don't walk into a maintenance window blind.
+
+It took me two 4am maintenance windows. With this approach, it
+should take you one.
+
+One more thing: be careful with API tokens. Redact them before
+you paste anything into a chat window.
 
 ---
 
