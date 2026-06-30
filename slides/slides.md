@@ -456,7 +456,7 @@ configs that mostly work. Build confidence, then generalize.
 
 ---
 
-# Takeaways
+# Layers
 
 - OpenTelemetry puts existing sensor data in a pile for your tooling to find.
 - Your vendor's config is "the pile"
