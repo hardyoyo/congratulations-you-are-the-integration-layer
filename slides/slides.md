@@ -328,7 +328,7 @@ graph TD
     A[Application] --> B[OpenTelemetry]
     B --> C[Collector]
     C --> D[Backends]
-    style C fill:#2d6a4f,stroke:#1b4332,color:#fff
+    style C fill:#a8dadc,stroke:#457b9d,color:#000
 </pre>
 </div>
 
