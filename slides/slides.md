@@ -345,9 +345,19 @@ has to own it.
 You're the Integration Layer Now.
 
 Note:
-- The thesis.
-- Nobody assigned this responsibility.
-- It's an architectural consequence.
+That's the title of this talk. And it's not a complaint. It's not a
+criticism of OpenTelemetry. It's a structural fact.
+
+When you decouple instrumentation from storage via a Collector,
+somebody has to operate the Collector. In a UC environment, that
+somebody is increasingly the platform team.
+
+It's just the way it is. But here's the other side of that coin:
+we don't have to wait for the vendor anymore. Got a clever idea?
+Go build it. The vendor handed us a standard protocol and said
+"go get 'em, tiger."
+
+That's agency. And responsibility.
 
 ---
 
