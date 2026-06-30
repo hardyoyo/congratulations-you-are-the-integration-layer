@@ -7,7 +7,7 @@ author: "Hardy Pottinger & John H. Robinson, IV"
 
 # Galaxy Brain DevOps
 
-Hardy Pottinger  
+Hardy Pottinger
 John H. Robinson, IV
 
 ### UC-Tech 2026
@@ -166,7 +166,7 @@ Note:
 
 # Team Lore Diverges From Docs
 
-- What people actually do  
+- What people actually do
 vs.
 - What the docs say
 
@@ -544,7 +544,7 @@ Note:
   the Makefile. You have questions. Let's see what we find.
   Hardy: I'll invite our robot friend.
   [demo]
-  
+
 ---
 
 # Retrospective

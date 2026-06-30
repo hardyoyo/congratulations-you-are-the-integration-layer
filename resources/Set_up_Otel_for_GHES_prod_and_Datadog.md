@@ -3,21 +3,21 @@
 docs: https://docs.github.com/en/enterprise-server@3.19/admin/monitoring-and-managing-your-instance/monitoring-your-instance/opentelemetry-metrics/setting-up-external-monitoring-with-opentelemetry#datadog
 
 1. SSH into your GitHub Enterprise Server instance and run the following command.
-    
+
     ```shell
     ghe-config observability.metrics.custom-config-enabled true
     ```
-    
+
 2. Create your custom OpenTelemetry configuration file at `/data/user/common/otelcol.yaml`:
-    
+
     ```shell
     sudo vim /data/user/common/otelcol.yaml
     ```
-    
+
 3. Add your custom configuration (see [Example configurations for popular monitoring systems](https://docs.github.com/en/enterprise-server@3.19/admin/monitoring-and-managing-your-instance/monitoring-your-instance/opentelemetry-metrics/setting-up-external-monitoring-with-opentelemetry#example-configurations-for-popular-monitoring-systems)).
-    
+
 4. Apply the configuration:
-    
+
     ```shell
     ghe-config-apply
     ```
@@ -206,7 +206,7 @@ Dec 17 12:24:22 git-ucsf-edu ghe-systemd-wrapper[3271812]: nginx: executing /usr
 Dec 17 12:24:23 git-ucsf-edu ghe-systemd-wrapper[3271812]: time=2025-12-17T12:24:23.453Z level=INFO source=exporter.go:126 msg=nginx-prometheus-exporter version="(version=1.5.0, branch=HEAD, revision=b14979c9f3634dcd5a2b158874e713beb3aca3d7)"
 Dec 17 12:24:23 git-ucsf-edu ghe-systemd-wrapper[3271812]: time=2025-12-17T12:24:23.492Z level=INFO source=exporter.go:127 msg="build context" build_context="(go=go1.25.1, platform=linux/amd64, user=goreleaser, date=2025-09-04T08:13:55Z, tags=unknown)"
 Dec 17 12:24:23 git-ucsf-edu ghe-systemd-wrapper[3271812]: time=2025-12-17T12:24:23.495Z level=INFO source=tls_config.go:347 msg="Listening on" address=[::]:8030
-Dec 17 12:24:23 git-ucsf-edu ghe-systemd-wrapper[3271812]: time=2025-12-17T12:24:23.495Z level=INFO source=tls_config.go:350 msg="TLS is disabled." http2=false address=[::]:8030    
+Dec 17 12:24:23 git-ucsf-edu ghe-systemd-wrapper[3271812]: time=2025-12-17T12:24:23.495Z level=INFO source=tls_config.go:350 msg="TLS is disabled." http2=false address=[::]:8030
 ```
 ... it's running on port 8030
 
@@ -223,6 +223,6 @@ tcp6       0      0 localhost:8030          localhost:52278         ESTABLISHED
 
 # OK, walking away from this for now, but will open a support ticket later
 
-- [ ] 
+- [ ]
 - [x] open a support ticket ... I *think* looking at the data above, that prometheus starts on the wrong port... or else otel is looking at the wrong port ✅ 2025-12-19
 - https://support.github.com/ticket/personal/0/3969763

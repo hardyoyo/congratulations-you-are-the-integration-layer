@@ -1,6 +1,6 @@
 from https://www.gartner.com/fast-answer/tech/e55c08f1-9b85-3f46-aeba-fac13e6110b3?ref=panel-in-disguise&refval=538293019#
 
-Gartner Fast Answer 
+Gartner Fast Answer
 What should I know about OpenTelemetry?
 
 Definition
