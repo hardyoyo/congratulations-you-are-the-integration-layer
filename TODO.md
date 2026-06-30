@@ -68,3 +68,29 @@ Current slide order:
 - [x] Callback image slide added after Discovering OpenTelemetry
 - [x] CI passing, pre-commit hooks installed
 - [x] Repo public at github.com/hardyoyo/congratulations-you-are-the-integration-layer
+
+## Vertical slide digressions
+
+Reveal.js supports vertical slides for optional deep-dives. Enable in
+mkslides.yml with `separator_vertical` and use `----` as the separator.
+
+Identified digression points (all optional, audience-driven):
+
+- [ ] **After `lsof`** -- annotated walkthrough of the lsof output
+      screenshot. For the "what am I actually looking at?" crowd.
+
+- [ ] **After "Read the Running System"** -- what else lives in /proc.
+      Bonus Linux trick: cmdline, environ, fd/. Could be a 2-slide
+      mini-tour for the curious.
+
+- [ ] **After "This Is The Design."** -- show an actual YAML snippet
+      of the layered configs. For people who want to see what
+      "layered" looks like in practice before the diagram sinks in.
+
+- [ ] **After "Discovering OpenTelemetry"** -- show the actual
+      ChatGPT Enterprise prompt. "Here's what I actually asked."
+      Good for the "show me the receipts" crowd.
+
+- [ ] **After "Configuring OpenTelemetry"** -- show the GitHub GHES
+      default config and the overlay side by side. For people who
+      want to see the actual files before The Recipe.
