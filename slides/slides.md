@@ -456,24 +456,6 @@ configs that mostly work. Build confidence, then generalize.
 
 ---
 
-# The Warning
-
-OpenTelemetry succeeded.
-
-Now you own part of the pipeline.
-
-Note:
-OpenTelemetry succeeded. That's genuinely good news. The vendors
-moved, the ecosystem matured, and now telemetry is portable.
-
-But success changed who owns the work. The pipeline has a middle
-now. Someone has to run it. At your UC campus, that someone is
-probably you.
-
-Better to know that going in than find out at 4am.
-
----
-
 # Takeaways
 
 - OpenTelemetry puts existing sensor data in a pile for your tooling to find.
