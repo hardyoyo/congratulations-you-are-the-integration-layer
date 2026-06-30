@@ -223,13 +223,15 @@ Collector already doing? I just didn't know which mindset I needed yet.
 
 # This Is The Design.
 
-```mermaid
+<div class="mermaid">
+<pre>
 graph TD
     A[Collector Distribution Default] --> D[Effective Config]
     B[Vendor Config] --> D
     C[Your Overlay] --> D
     D --> E[Running Collector]
-```
+</pre>
+</div>
 
 Note:
 The OTel Collector is built for composability — multiple config files
