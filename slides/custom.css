@@ -7,3 +7,10 @@
 .reveal ul {
   list-style-type: square;
 }
+
+/* Disable all-caps headings from solarized theme */
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  text-transform: none;
+}
