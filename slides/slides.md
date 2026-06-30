@@ -277,7 +277,7 @@ Window 1: just configure the thing.
 
 Window 2: wait... maybe I'm editing the wrong config?
 
-Oh. It's in layers.
+Oh. It's in layers. :onion:
 
 </div>
 
