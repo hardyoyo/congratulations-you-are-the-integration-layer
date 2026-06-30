@@ -1,8 +1,8 @@
 # Congratulations, You're the Integration Layer Now
 
-[![CI](https://github.com/hardyoyo/congratulations-you-are-the-integration-layer/actions/workflows/ci.yml/badge.svg)](https://github.com/hardyoyo/congratulations-you-are-the-integration-layer/actions/workflows/ci.yml)
-
 ### OpenTelemetry in the UC Stack
+
+[![CI](https://github.com/hardyoyo/congratulations-you-are-the-integration-layer/actions/workflows/ci.yml/badge.svg)](https://github.com/hardyoyo/congratulations-you-are-the-integration-layer/actions/workflows/ci.yml)
 
 A 45-minute talk for UC Tech 2026 by Hardy Pottinger.
 
