@@ -223,7 +223,6 @@ Collector already doing? I just didn't know which mindset I needed yet.
 # This Is The Design.
 
 ```mermaid
-%%{init: {'look': 'handDrawn', 'theme': 'neutral'}}%%
 flowchart TD
     A[Collector Distribution Default] --> D[Effective Config]
     B[Vendor Config] --> D
