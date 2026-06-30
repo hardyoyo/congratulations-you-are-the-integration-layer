@@ -55,11 +55,6 @@ Current slide order:
 
 ## Optional / nice to have
 
-- [ ] GitHub -> Datadog pipeline diagram (Mermaid) -- end-to-end:
-      GitHub OTLP endpoint -> Collector -> Datadog exporter.
-      Would make The Recipe slide more concrete.
-- [ ] Config merge order diagram -- default -> vendor -> overlay ->
-      effective config. Would strengthen This Is The Design.
 - [ ] Drop resources/ folder before conference (scraped web content)
 
 ## Done
@@ -67,8 +62,9 @@ Current slide order:
 - [x] All 27 slides have readable speaker notes
 - [x] Screenshots: lsof-fail.png, cat-proc-cmdline.png,
       two-configs-zoom.png, GHES_metrics_Datadog.png
-- [x] Mermaid diagrams: This Is The Design, Old World, New World
+- [x] Mermaid diagrams: This Is The Design (config merge order), Old World, New World
       (all using div.mermaid/pre format with handDrawn theme)
+- [x] GitHub->Datadog pipeline diagram: not needed, story does the work
 - [x] Callback image slide added after Discovering OpenTelemetry
 - [x] CI passing, pre-commit hooks installed
 - [x] Repo public at github.com/hardyoyo/congratulations-you-are-the-integration-layer
