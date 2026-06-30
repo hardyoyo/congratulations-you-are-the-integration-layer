@@ -402,7 +402,7 @@ Note:
 Don't do what I did. Don't walk into a maintenance window blind.
 
 Assume your vendor ships a default Collector config. Find it first.
-Use `cat /proc/\<pid\>/cmdline | tr ' ' '
+Use `cat /proc/\<pid\>/cmdline | tr '' '
 '` -- you already
 know this trick.
 
@@ -435,12 +435,10 @@ template. The worst outcome is nobody owning it — that's how
 drift happens.
 
 **Treat config as code.**
-Put your Collector configs in Git. Use a minimal GitOps flow:
-- PR changes to a `collector-configs/` repo.
-- A CI check runs `otelcol --dry-run --config <file>` to validate
-  YAML syntax and pipeline topology.
-- Merge to main deploys via Ansible, Helm, or a simple rsync.
-This catches typos before they cause silent failures.
+Put your Collector configs in Git.
+- Use PRs.
+- Use CI -- at least a lint check.
+- Use CD if you can, but at least script your deployment somehow.
 
 **Standardize patterns.**
 Define a small set of approved pipeline templates:
