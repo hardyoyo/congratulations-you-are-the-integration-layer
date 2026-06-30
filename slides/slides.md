@@ -328,6 +328,7 @@ graph TD
     A[Application] --> B[OpenTelemetry]
     B --> C[Collector]
     C --> D[Backends]
+    style C fill:#2d6a4f,stroke:#1b4332,color:#fff
 </pre>
 </div>
 
@@ -361,7 +362,7 @@ That's agency. And responsibility.
 
 ---
 
-# Suddenly We Owned...
+# We Own...
 
 - Endpoints
 - Collectors
