@@ -349,9 +349,8 @@ Note:
 That's the title of this talk. And it's not a complaint. It's not a
 criticism of OpenTelemetry. It's a structural fact.
 
-When you decouple instrumentation from storage via a Collector,
-somebody has to operate the Collector. In a UC environment, that
-somebody is increasingly the platform team.
+If you want metrics out of your stuff, your vendor is going to
+hand you a Collector and expect you to know what to do with it.
 
 It's just the way it is. But here's the other side of that coin:
 we don't have to wait for the vendor anymore. Got a clever idea?
