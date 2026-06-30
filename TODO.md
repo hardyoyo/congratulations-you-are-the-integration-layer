@@ -62,9 +62,8 @@ clarify ideas that take paragraphs to explain in words.
       flowcharts: tight coupling (App → Vendor Agent → Vendor Backend)
       vs. decoupled (App → OTel SDK → Collector → Backends). Makes
       the architectural shift land instantly.
-- [ ] **Collector Architecture (new slide after "This Is The Design")**
-      — receivers/processors/exporters as a Mermaid flowchart, with
-      pipelines connecting them. The natural diagram moment.
+- [x] **Collector Architecture (new slide after "This Is The Design")**
+      — done; uses div.mermaid/pre format with handDrawn theme
 - [ ] **Config merge order** — a diagram showing default config →
       base config → overlay config → env var substitution → effective
       config. Visualizes the "which config am I editing?" mystery.
@@ -91,8 +90,8 @@ clarify ideas that take paragraphs to explain in words.
 - [ ] NEW: "Two Configs."
 - [ ] NEW: "I Asked for Help."
 - [ ] NEW: "Two Hours. One Maintenance Window."
-- [ ] Slide 14: "This Is The Design."
-- [ ] NEW: "Collector Architecture" — receivers/pipelines/exporters, config layering
+- [x] Slide 14: "This Is The Design." — diagram added, notes written
+- [x] NEW: "The Collector Collects." — added with notes
 - [ ] Slide 15: "Suddenly... Everything Made Sense."
 - [ ] Slide 16: "I Finally Understood"
 - [ ] Slide 17: "The Old World"
