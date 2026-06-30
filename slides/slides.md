@@ -222,11 +222,48 @@ Collector already doing? I just didn't know which mindset I needed yet.
 
 # This Is The Design.
 
+```mermaid
+---
+config:
+  look: handDrawn
+  theme: neutral
+---
+flowchart TD
+    A[Collector Distribution Default] --> D[Effective Config]
+    B[Vendor Config] --> D
+    C[Your Overlay] --> D
+    D --> E[Running Collector]
+```
+
 Note:
-- Composability.
-- Layering.
-- Vendor neutrality.
-- Explain why this architecture exists.
+The OTel Collector is built for composability — multiple config files
+merged in order, each layer adding or adjusting what gets collected
+and where it goes.
+
+The open-source Collector installs a default config at a well-known
+path. Vendors like GitHub layer their own config on top. You add your
+overlay on top of that. The result is one effective config that nobody
+ever wrote in a single file.
+
+That's why editing one layer had no effect. I was touching the top of
+a stack I didn't know existed.
+
+---
+
+# The Collector Collects.
+
+Note:
+The name is not an accident. The Collector is a well-known pattern
+from distributed systems — it finds telemetry from whatever sources
+are already running and routes it onward.
+
+On GHES, Prometheus exporters were already there. nginx, sql, haproxy,
+process metrics — all running, all generating data. The Collector just
+needed to find them and route their output to Datadog. It didn't
+install anything. It collected what was already there.
+
+That's what OpenTelemetry optimizes for. Not instrumentation.
+Interoperability.
 
 ---
 
