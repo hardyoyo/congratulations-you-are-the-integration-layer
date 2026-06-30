@@ -269,6 +269,8 @@ tooling to find.
 
 # Discovering OpenTelemetry
 
+<div style="text-align: left">
+
 Window 1: just configure the thing.
 
 *(fail)*
@@ -276,6 +278,8 @@ Window 1: just configure the thing.
 Window 2: wait... maybe I'm editing the wrong config?
 
 Oh. It's in layers.
+
+</div>
 
 Note:
 First window: walked in confident. Edited the config, restarted,
