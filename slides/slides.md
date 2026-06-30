@@ -422,7 +422,7 @@ you paste anything into a chat window.
 
 ---
 
-# What Platform Teams Should Do
+# Platform Teams Should
 
 - Decide ownership.
 - Treat config as code.
