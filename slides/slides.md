@@ -273,7 +273,7 @@ tooling to find.
 
 Window 1: just configure the thing.
 
-*(fail)*
+💥
 
 Window 2: wait... maybe I'm editing the wrong config?
 
