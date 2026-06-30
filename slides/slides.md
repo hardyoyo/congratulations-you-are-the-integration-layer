@@ -301,41 +301,42 @@ There it is.
 
 # The Old World
 
-Application
-
-↓
-
-Vendor Agent
-
-↓
-
-Vendor Backend
+<div class="mermaid">
+<pre>
+%%{init: {'look': 'handDrawn', 'theme': 'neutral'}}%%
+graph TD
+    A[Application] --> B[Vendor Agent]
+    B --> C[Vendor Backend]
+</pre>
+</div>
 
 Note:
-- Tight coupling.
-- Vendor-owned integration.
+This is how it used to work. One vendor owned the whole stack --
+the instrumentation, the collection, the storage. You bought in,
+they handled it.
+
+Less flexibility. Also less responsibility on your end.
 
 ---
 
 # The New World
 
-Application
-
-↓
-
-OpenTelemetry
-
-↓
-
-Collector
-
-↓
-
-Backend(s)
+<div class="mermaid">
+<pre>
+%%{init: {'look': 'handDrawn', 'theme': 'neutral'}}%%
+graph TD
+    A[Application] --> B[OpenTelemetry]
+    B --> C[Collector]
+    C --> D[Backends]
+</pre>
+</div>
 
 Note:
-- Decoupled architecture.
-- Somebody owns the middle.
+Decoupled. Vendor-neutral. Flexible. Swap backends without
+re-instrumenting.
+
+But notice what appeared in the middle. A Collector. And somebody
+has to own it.
 
 ---
 
