@@ -390,45 +390,31 @@ have a look at the configs so you know what it's like.
 
 ---
 
-# Reading Collector Configs
+# The Recipe
 
-Ask better questions.
-
-Note:
-- Which distribution?
-- Which defaults?
-- Which overlay?
-- Which deployment?
-- Which runtime?
-
----
-
-# Practical Detective Work
+1. Assume your vendor has their own config.
+2. Use `/proc/\<pid\>/cmdline` to find it.
+3. Take: vendor config + your overlay + your goals.
+4. Hand it to an AI agent. Ask for help.
+5. Watch out for API tokens.
 
 Note:
-- Finding the running config.
-- Looking for overlays.
-- Understanding effective configuration.
-- Reading vendor examples critically.
+Don't do what I did. Don't walk into a maintenance window blind.
 
----
+Assume your vendor ships a default Collector config. Find it first.
+Use `cat /proc/\<pid\>/cmdline | tr ' ' '
+'` -- you already
+know this trick.
 
-# The GitHub Story
+Then take that vendor config, your baseline overlay, and a clear
+description of what you want to get out of it. Hand all of it to
+an AI agent and ask for help structuring your overlay.
 
-Note:
-- Walk through the implementation.
-- Focus on discoveries.
-- Not every implementation detail.
-- Emphasize the learning process.
+It took me two 4am maintenance windows. With this approach, it
+should take you one.
 
----
-
-# What I'd Do Differently
-
-Note:
-- Understand the layering first.
-- Find the effective config first.
-- Learn the Collector's objective before editing YAML.
+One more thing: be careful with API tokens. Redact them before
+you paste anything into a chat window.
 
 ---
 
@@ -479,20 +465,30 @@ OpenTelemetry succeeded.
 Now you own part of the pipeline.
 
 Note:
-- This is not a vendor problem.
-- This is the consequence of vendor-neutral architecture.
-- Better to understand it now than discover it accidentally.
+OpenTelemetry succeeded. That's genuinely good news. The vendors
+moved, the ecosystem matured, and now telemetry is portable.
+
+But success changed who owns the work. The pipeline has a middle
+now. Someone has to run it. At your UC campus, that someone is
+probably you.
+
+Better to know that going in than find out at 4am.
 
 ---
 
 # Takeaways
 
-- OpenTelemetry optimizes for interoperability.
-- The Collector is infrastructure.
-- Layering is intentional.
-- Learn the mental model first.
-- This week of confusion can become one afternoon.
+- OpenTelemetry puts existing sensor data in a pile for your tooling to find.
+- The Collector config is layered. Find all the layers first.
+- Use `/proc/\<pid\>/cmdline` to see what your Collector is actually reading.
+- Hand the vendor config + your goals to an AI agent. Ask for help.
+- Watch out for API tokens.
 
 ---
 
 # Questions?
+
+Note:
+I'll take questions. And if you're working through something similar
+at your campus, find me afterwards. We're all figuring this out
+together.
