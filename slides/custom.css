@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@700&display=swap");
+
 /* Override reveal.js solarized theme defaults */
 .reveal {
   --r-heading1-size: 2.5em;
@@ -8,9 +10,11 @@
   list-style-type: square;
 }
 
-/* Disable all-caps headings from solarized theme */
+/* Zilla Slab bold headings, no all-caps */
 .reveal h1,
 .reveal h2,
 .reveal h3 {
   text-transform: none;
+  font-family: "Zilla Slab", serif;
+  font-weight: 700;
 }
