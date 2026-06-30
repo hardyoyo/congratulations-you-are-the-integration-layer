@@ -50,11 +50,12 @@ with it. I ignored it because vendors handled observability for me. The agent
 took care of it. The integration took care of it. I didn't have to think about
 the pipeline.
 
+That was fine. Until it wasn't.
+
 Quick note: everyone in observability calls it OTel. I'll use both
 from here on, but please don't zing me on jargon if I say OTel,
 because that's what everyone calls it.
 
-That was fine. Until it wasn't.
 
 ---
 
@@ -67,7 +68,7 @@ The industry.
 > "Supported by more than 40 observability vendors" — CAMSS, 2024
 
 Note:
-The organizers told us this isn't a scientific conference, WeI don't need receipts.
+The organizers told us this isn't a scientific conference, we don't need receipts.
 
 But I have receipts. Gartner calls OTel "early mainstream," with 20 to 50 percent
 market penetration. The European Commission's CAMSS assessment found OTel
@@ -223,7 +224,6 @@ Collector already doing? I just didn't know which mindset I needed yet.
 # This Is The Design.
 
 ```mermaid
-%%{init: {'look': 'handDrawn', 'theme': 'neutral'}}%%
 flowchart TD
     A[Collector Distribution Default] --> D[Effective Config]
     B[Vendor Config] --> D
