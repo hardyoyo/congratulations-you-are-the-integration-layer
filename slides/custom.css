@@ -21,3 +21,14 @@
   font-family: "Zilla Slab", serif;
   font-weight: 700;
 }
+
+.reveal::after {
+  content: "github.com/hardyoyo/congratulations-you-are-the-integration-layer";
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.55em;
+  opacity: 0.55;
+  color: var(--r-main-color, inherit);
+}
