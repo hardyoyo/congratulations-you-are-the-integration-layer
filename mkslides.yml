@@ -11,3 +11,6 @@ revealjs:
 plugins:
   - extra_css:
       - custom.css
+  - name: RevealMermaid
+    extra_javascript:
+      - https://cdn.jsdelivr.net/npm/reveal.js-mermaid-plugin/plugin/mermaid/mermaid.min.js
