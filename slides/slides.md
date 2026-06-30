@@ -225,6 +225,7 @@ Collector already doing? I just didn't know which mindset I needed yet.
 
 <div class="mermaid">
 <pre>
+%%{init: {'look': 'handDrawn', 'theme': 'neutral'}}%%
 graph TD
     A[Collector Distribution Default] --> D[Effective Config]
     B[Vendor Config] --> D
