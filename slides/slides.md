@@ -273,11 +273,11 @@ tooling to find.
 
 Window 1: just configure the thing.
 
-💥
+:boom: fail :boom:
 
 Window 2: wait... maybe I'm editing the wrong config?
 
-Oh. It's in layers.
+Oh. It's in layers. :onion:
 
 </div>
 
