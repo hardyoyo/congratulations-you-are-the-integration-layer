@@ -381,12 +381,12 @@ Again: not a complaint. Just a heads up.
 
 ---
 
-# Configuration Is Architecture
+# Configuring OpenTelemetry
 
 Note:
-- Collector YAML isn't "settings."
-- It encodes operational decisions.
-- Read it as infrastructure.
+I said at the beginning that this isn't a tutorial on configuring
+OpenTelemetry. And it's not. But I thought I'd at least let you
+have a look at the configs so you know what it's like.
 
 ---
 
