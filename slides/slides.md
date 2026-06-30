@@ -400,7 +400,6 @@ have a look at the configs so you know what it's like.
 2. Use `/proc/\<pid\>/cmdline` to find it.
 3. Take: vendor config + your overlay + your goals.
 4. Hand it to an AI agent. Ask for help.
-5. Watch out for API tokens.
 
 Note:
 Don't do what I did. Don't walk into a maintenance window blind.
