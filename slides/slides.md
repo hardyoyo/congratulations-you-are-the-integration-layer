@@ -45,16 +45,14 @@ I was wrong.
 I was.
 
 Note:
-Most people in this room have heard of OpenTelemetry. Some have experimented
-with it. I ignored it because vendors handled observability for me. The agent
-took care of it. The integration took care of it. I didn't have to think about
-the pipeline.
-
-That was fine. Until it wasn't.
+I ignored OpenTelemetry because vendors handled observability for me.
+The agent took care of it. The integration took care of it. I didn't
+have to think about the pipeline.
 
 Quick note: everyone in observability calls it OTel. I'll use both
-from here on, but please don't zing me on jargon if I say OTel,
-because that's what everyone calls it.
+from here on.
+
+That was fine. Until it wasn't.
 
 
 ---
