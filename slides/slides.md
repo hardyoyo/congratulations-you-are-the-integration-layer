@@ -352,14 +352,15 @@ Less flexibility. Also less responsibility on your end.
 graph TD
     A[Application] --> B[OpenTelemetry]
     B --> C[Collector]
-    C --> D[Backends]
+    C --> D[Destinations]
     style C fill:#a8dadc,stroke:#457b9d,color:#000
 </pre>
 </div>
 
 Note:
 The app sends data. OTel carries it. The Collector routes it.
-Backends store it. Nothing depends on anything else anymore.
+Destinations -- your tools, like Datadog -- receive it.
+The pieces aren't locked together anymore.
 
 But look what showed up in the middle. A Collector. And somebody
 has to own it.
