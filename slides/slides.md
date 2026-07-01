@@ -47,13 +47,10 @@ I was.
 Note:
 I ignored OpenTelemetry because vendors handled observability for me.
 The agent took care of it. The integration took care of it. I didn't
-have to think about the pipeline.
+have to think about the pipeline. That was fine. Until it wasn't.
 
 Quick note: everyone in observability calls it OTel. I'll use both
 from here on.
-
-That was fine. Until it wasn't.
-
 
 ---
 
