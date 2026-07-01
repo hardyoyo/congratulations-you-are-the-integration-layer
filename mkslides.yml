@@ -1,5 +1,6 @@
 slides:
   theme: solarized
+  separator_vertical: "^----$"
   title: "Congratulations, You're the Integration Layer Now"
   highlight_theme: stackoverflow-light
 

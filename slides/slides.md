@@ -392,6 +392,75 @@ I said at the beginning that this isn't a tutorial on configuring
 OpenTelemetry. And it's not. But I thought I'd at least let you
 have a look at the configs so you know what it's like.
 
+----
+
+# GitHub's Config
+
+```yaml [1-17|19-23]
+receivers:
+  otlp/ghes:
+    protocols:
+      http:
+        endpoint: 127.0.0.1:8018
+  prometheus/ghes:
+    config:
+      scrape_configs:
+        - job_name: "victoriametrics"
+        - job_name: "node_exporter"
+        - job_name: "process_exporter"
+        - job_name: "haproxy_exporter"
+        - job_name: "redis_exporter"
+        - job_name: "mysqld_exporter"
+        # ...and 7 more
+  chrony:
+    endpoint: udp://127.0.0.1:8033
+
+service:
+  pipelines:
+    metrics/ghes:
+      receivers: [otlp/ghes, prometheus/ghes, chrony]
+      exporters: [prometheus/ghes, otlphttp/internal]
+```
+
+Note:
+GitHub ships this. Thirteen Prometheus scrapers already running,
+already collecting metrics from every major service on the server.
+
+The pile already existed.
+
+----
+
+# Your Overlay
+
+```yaml [1-7|9-14|16-20]
+exporters:
+  datadog:
+    api:
+      site: us3.datadoghq.com
+      key: <YOUR_API_KEY>
+    host_metadata:
+      enabled: true
+
+processors:
+  resource/team:
+    attributes:
+    - key: team
+      value: "developerexperience"
+      action: upsert
+
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp/ghes, prometheus/ghes]
+      exporters: [datadog]
+```
+
+Note:
+This is all you needed to add. Twenty lines. Point to Datadog,
+tag it with your team, wire it into the existing pipeline.
+
+The pile was already there. You just needed to know where to look.
+
 ---
 
 
