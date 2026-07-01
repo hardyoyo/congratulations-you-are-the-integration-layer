@@ -48,7 +48,7 @@ Current slide order:
   - Image credits: GHES_metrics_Datadog.png, lsof-fail.png,
     cat-proc-cmdline.png, two-configs-zoom.png
   - Sources: Gartner Fast Answer, CAMSS Assessment
-- [ ] Readability review -- full pass on all notes for words that
+- [x] Readability review -- full pass on all notes for words that
       trip up when read aloud (known fix: hypothesis -> hunch)
 - [ ] Sources review -- confirm Gartner and CAMSS citations are
       correct; decide if any other sources deserve a callout
