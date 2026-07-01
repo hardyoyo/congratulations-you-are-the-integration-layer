@@ -336,7 +336,7 @@ graph TD
 </div>
 
 Note:
-This is how it used to work. One vendor owned the whole stack --
+Old World: this is how it used to work. One vendor owned the whole stack --
 the wiring, the collection, the storage. You bought in,
 they handled it.
 
@@ -376,8 +376,8 @@ You're the Integration Layer Now.
 > solutions." — Site24x7
 
 Note:
-That's the title of this talk. And it's not a complaint. It's not a
-criticism of OpenTelemetry. It's a structural fact.
+Congratulations. It's the title of this talk. And it's not a
+complaint. It's not a criticism of OpenTelemetry. It's just a fact.
 
 If you want metrics out of your stuff, your vendor is going to
 hand you a Collector and expect you to know what to do with it.
@@ -487,13 +487,6 @@ tag it with my team, wire it into the existing pipeline.
 
 The pile was already there. I just needed to know where to look.
 
-Notice the API key uses an environment variable reference. Keep
-secrets in the environment, reference them in the config. Never
-put a real key in a file.
-
----
-
-
 ---
 
 # Layers :onion:
@@ -532,10 +525,15 @@ find me afterwards. We're all figuring this out together.
 
 # Acknowledgments
 
+<!-- markdownlint-disable MD013 -->
 **Sources**
 
 - [Gartner Fast Answer: "What should I know about OpenTelemetry?"](https://www.gartner.com/fast-answer/tech/e55c08f1-9b85-3f46-aeba-fac13e6110b3)
 - [CAMSS Assessment Summary: OpenTelemetry EIF Scenario v1.0](https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/camss-assessment-opentelemetry-eif-scenario/distribution/camss-assessment-summary-opentelemetry-eif-scenario-v100)
+- [2024 Observability Pulse Report](https://logz.io/observability-pulse-2024/) — Logz.io
+- [4 Common OpenTelemetry Challenges](https://www.site24x7.com/blog/4-common-opentelemetry-challenges) — Site24x7
+
+<!-- markdownlint-enable MD013 -->
 
 **Slides**
 
