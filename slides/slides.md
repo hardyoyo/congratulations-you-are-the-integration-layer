@@ -303,7 +303,7 @@ The system was never broken. I just didn't understand it yet.
 Do you have access to the GHES v3.19.0
 OpenTelemetry documentation?
 
-*[model: no]*
+:robot: no
 
 *[pastes docs]*
 *[pastes default config]*
@@ -313,7 +313,7 @@ Help me configure otelcol.yaml to work with Datadog.
 Use MYAPIKEY as a placeholder.
 I want CPU, RAM, and storage metrics.
 
-*[boop]*
+:robot: [boop]
 
 </div>
 
