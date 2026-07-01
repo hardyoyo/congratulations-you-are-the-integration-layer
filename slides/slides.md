@@ -294,6 +294,37 @@ Two hours later, metrics were flowing into Datadog.
 The week of confusion wasn't wasted. But it was optional.
 The system was never broken. I just didn't understand it yet.
 
+----
+
+# Asking for Help
+
+<div style="text-align: left">
+
+Do you have access to the GHES v3.19.0
+OpenTelemetry documentation?
+
+*[model: no]*
+
+*[pastes docs]*
+*[pastes default config]*
+*[pastes example otelcol.yaml]*
+
+Help me configure otelcol.yaml to work with Datadog.
+Use MYAPIKEY as a placeholder.
+I want CPU, RAM, and storage metrics.
+
+*[boop]*
+
+</div>
+
+Note:
+That's it. That's the whole conversation. The model didn't have
+the context, so I built it. Pasted the docs, the default config,
+the example. Asked a specific question with a safe placeholder
+for the API key.
+
+Two hours later, metrics were flowing into Datadog.
+
 ---
 
 ![GitHub Enterprise metrics in Datadog](images/GHES_metrics_Datadog.png)
