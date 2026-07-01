@@ -136,7 +136,7 @@ I changed the configuration. Restarted the collector. Waited. Nothing.
 Changed it again. Restarted. Nothing. I went back to the docs. Read them
 more carefully. Tried again. Still nothing.
 
-Edit. Restart. Wait. Nothing. Edit. Restart. Wait. Nothing.
+You've probably been here before, right? What are we thinking about now?
 
 ---
 
@@ -148,16 +148,16 @@ Note:
 This is the question that changed everything. Not "what's wrong with my
 config?" but "am I even editing the right file?"
 
-When you've been editing and restarting and nothing changes, the hunch
-"wrong file" gets very compelling. So I stopped reading the documentation
-and started reading the running system.
+So, been there, done that. What's a good tool to investigate this?
+We have a running Collector, I know how to find the process ID for it.
+What can I do with that?
 
 ---
 
 # `lsof`
 
 ![lsof output — no config files](images/lsof-fail.png)
-s
+
 Note:
 I had a hunch: what if there's another config file the Collector
 is reading that I don't know about? `lsof -p <pid>` shows every open
