@@ -424,3 +424,16 @@ Note:
 I'll take questions. And if you're working through something similar
 at your campus, find me afterwards. We're all figuring this out
 together.
+
+---
+
+# Acknowledgments
+
+**Sources**
+
+- [Gartner Fast Answer: "What should I know about OpenTelemetry?"](https://www.gartner.com/fast-answer/tech/e55c08f1-9b85-3f46-aeba-fac13e6110b3)
+- [CAMSS Assessment Summary: OpenTelemetry EIF Scenario v1.0](https://interoperable-europe.ec.europa.eu/collection/common-assessment-method-standards-and-specifications-camss/solution/camss-assessment-opentelemetry-eif-scenario/distribution/camss-assessment-summary-opentelemetry-eif-scenario-v100)
+
+**Slides**
+
+github.com/hardyoyo/congratulations-you-are-the-integration-layer
