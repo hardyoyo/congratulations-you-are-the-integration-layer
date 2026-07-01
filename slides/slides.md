@@ -416,15 +416,6 @@ Are you ready for it? What questions do you need to ask?
 
 Speaking of questions... do you have any for me?
 
-Note:
-Don't do what I did. Don't walk into a maintenance window blind.
-
-It took me two 4am maintenance windows. With this approach, it
-should take you one.
-
-One more thing: be careful with API tokens. Redact them before
-you paste anything into a chat window.
-
 ---
 
 # Questions?
