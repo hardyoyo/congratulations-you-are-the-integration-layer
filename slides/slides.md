@@ -67,12 +67,16 @@ The industry.
 
 > "Supported by more than 40 observability vendors" — CAMSS, 2024
 
+> "48% cite lack of knowledge as the top challenge" — Logz.io, 2024
+
 Note:
 The organizers told us this isn't a scientific conference, we don't need receipts.
 
-But I have receipts. Gartner calls OTel "early mainstream," with 20 to 50 percent
-market penetration. The European Commission's CAMSS assessment found OTel
-supported by more than 40 observability vendors.
+But I have receipts. Gartner calls OTel "early mainstream," with 20 to 50
+percent market penetration. The European Commission's CAMSS assessment found
+OTel supported by more than 40 observability vendors. And Logz.io found that
+48% of teams cited lack of knowledge as their biggest challenge. Not tooling.
+Not budget. Knowledge. I was in that 48%.
 
 The point is: the industry has changed. This isn't a side project anymore.
 This is how it's done.
@@ -371,6 +375,10 @@ has to own it.
 
 You're the Integration Layer Now.
 
+> "You need to integrate, deploy, and continually maintain some
+> combination of exporters, agents, collectors, and destination
+> solutions." — Site24x7
+
 Note:
 That's the title of this talk. And it's not a complaint. It's not a
 criticism of OpenTelemetry. It's a structural fact.
@@ -459,7 +467,7 @@ exporters:
   datadog:
     api:
       site: us3.datadoghq.com
-      key: <MY_API_KEY>
+      key: ${env:MY_API_KEY}
     host_metadata:
       enabled: true
 
@@ -483,6 +491,10 @@ tag it with my team, wire it into the existing pipeline.
 
 The pile was already there. I just needed to know where to look.
 
+Notice the API key uses an environment variable reference. Keep
+secrets in the environment, reference them in the config. Never
+put a real key in a file.
+
 ---
 
 
@@ -495,8 +507,13 @@ The pile was already there. I just needed to know where to look.
 - The Collector config is layered. Find all the layers first.
 - Use `/proc/\<pid\>/cmdline` to see what your Collector is actually reading.
 - Hand the vendor config + your goals to an AI agent. Ask for help.
+- Run `otelcol validate --config=<file>` to check your work before deploying.
 
 Note:
+One more concrete tool: `otelcol validate` is built into the Collector
+itself. Run it against your config before you deploy. It catches
+mistakes before they become 4am problems.
+
 Your vendor has probably already mentioned OpenTelemetry. Or they're
 about to. Think about the metrics you want out of your servers, your
 applications. If OTel is how your vendor plans to support getting
