@@ -406,6 +406,17 @@ have a look at the configs so you know what it's like.
 - Hand the vendor config + your goals to an AI agent. Ask for help.
 
 Note:
+Your vendor has probably already mentioned OpenTelemetry. Or they're
+about to. Think about the metrics you want out of your servers, your
+applications. If OTel is how your vendor plans to support getting
+those metrics out -- and increasingly, it is -- you've just had a
+preview of what that process is going to look like.
+
+Are you ready for it? What questions do you need to ask?
+
+Speaking of questions... do you have any for me?
+
+Note:
 Don't do what I did. Don't walk into a maintenance window blind.
 
 It took me two 4am maintenance windows. With this approach, it
