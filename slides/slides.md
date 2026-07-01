@@ -294,7 +294,7 @@ Two hours later, metrics were flowing into Datadog.
 The week of confusion wasn't wasted. But it was optional.
 The system was never broken. I just didn't understand it yet.
 
-----
+-v-
 
 # Asking for Help
 
@@ -423,7 +423,7 @@ I said at the beginning that this isn't a tutorial on configuring
 OpenTelemetry. And it's not. But I thought I'd at least let you
 have a look at the configs so you know what it's like.
 
-----
+-v-
 
 # GitHub's Config
 
@@ -459,7 +459,7 @@ already collecting metrics from every major service on the server.
 
 The pile already existed.
 
-----
+-v-
 
 # My Overlay
 

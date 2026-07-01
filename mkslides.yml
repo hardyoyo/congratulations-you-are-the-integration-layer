@@ -1,6 +1,6 @@
 slides:
   theme: solarized
-  separator_vertical: "^----$"
+  separator_vertical: "^-v-$"
   title: "Congratulations, You're the Integration Layer Now"
   highlight_theme: stackoverflow-light
 
