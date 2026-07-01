@@ -7,7 +7,7 @@ author: "Hardy Pottinger"
 
 ### OpenTelemetry in the UC Stack
 
-### Hardy Pottinger, UCSF | UC Tech 2026
+### hardy.pottinger@ucsf.edu | UC Tech 2026
 
 [![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
 
@@ -229,7 +229,7 @@ Collector already doing? I just didn't know which mindset I needed yet.
 graph TD
     A[Collector Distribution Default] --> D[Effective Config]
     B[Vendor Config] --> D
-    C[Your Overlay] --> D
+    C[My Overlay] --> D
     D --> E[Running Collector]
 </pre>
 </div>
@@ -430,14 +430,14 @@ The pile already existed.
 
 ----
 
-# Your Overlay
+# My Overlay
 
 ```yaml [1-7|9-14|16-20]
 exporters:
   datadog:
     api:
       site: us3.datadoghq.com
-      key: <YOUR_API_KEY>
+      key: <MY_API_KEY>
     host_metadata:
       enabled: true
 
@@ -456,10 +456,10 @@ service:
 ```
 
 Note:
-This is all you needed to add. Twenty lines. Point to Datadog,
-tag it with your team, wire it into the existing pipeline.
+This is all I needed to add. Twenty lines. Point to Datadog,
+tag it with my team, wire it into the existing pipeline.
 
-The pile was already there. You just needed to know where to look.
+The pile was already there. I just needed to know where to look.
 
 ---
 
@@ -490,9 +490,8 @@ Speaking of questions... do you have any for me?
 # Questions?
 
 Note:
-I'll take questions. And if you're working through something similar
-at your campus, find me afterwards. We're all figuring this out
-together.
+If you're working through something similar at your campus,
+find me afterwards. We're all figuring this out together.
 
 ---
 
