@@ -50,7 +50,7 @@ Current slide order:
   - Sources: Gartner Fast Answer, CAMSS Assessment
 - [x] Readability review -- full pass on all notes for words that
       trip up when read aloud (known fix: hypothesis -> hunch)
-- [ ] Sources review -- confirm Gartner and CAMSS citations are
+- [x] Sources review -- confirm Gartner and CAMSS citations are
       correct; decide if any other sources deserve a callout
 
 ## Optional / nice to have
