@@ -122,7 +122,7 @@ Note:
 I configured the integration. I waited. I refreshed. Nothing. Not an error.
 Not a partial result. Just nothing. An empty space where metrics should be.
 
-OK. I probably made a typo. I re-read the documentation. I re-configured.
+OK. I probably made a typo. I re-read the docs. I re-configured.
 I waited again.
 
 ---
@@ -132,7 +132,7 @@ I waited again.
 Nothing happened.
 
 Note:
-I changed the configuration. Restarted the collector. Waited. Nothing.
+I changed the config. Restarted the collector. Waited. Nothing.
 Changed it again. Restarted. Nothing. I went back to the docs. Read them
 more carefully. Tried again. Still nothing.
 
@@ -210,7 +210,7 @@ The GitHub docs told me exactly what to put in my config file.
 They were accurate. They just didn't mention that the Collector
 was already running with a base config underneath mine.
 
-That's not a documentation bug. It's a documentation gap. The
+That's not a doc bug. It's a doc gap. The
 vendor documented their overlay. They didn't document the whole
 stack. And if you don't know the stack has layers, the docs
 look complete when they aren't.
@@ -235,7 +235,7 @@ graph TD
 </div>
 
 Note:
-The OTel Collector is built for composability — multiple config files
+The OTel Collector is built to be layered and combined — multiple config files
 merged in order, each layer adding or adjusting what gets collected
 and where it goes.
 
@@ -338,7 +338,7 @@ graph TD
 
 Note:
 This is how it used to work. One vendor owned the whole stack --
-the instrumentation, the collection, the storage. You bought in,
+the wiring, the collection, the storage. You bought in,
 they handled it.
 
 Less flexibility. Also less responsibility on your end.
@@ -359,10 +359,10 @@ graph TD
 </div>
 
 Note:
-Decoupled. Vendor-neutral. Flexible. Swap backends without
-re-instrumenting.
+The app sends data. OTel carries it. The Collector routes it.
+Backends store it. Nothing depends on anything else anymore.
 
-But notice what appeared in the middle. A Collector. And somebody
+But look what showed up in the middle. A Collector. And somebody
 has to own it.
 
 ---
@@ -394,7 +394,7 @@ That's agency. And responsibility.
 - Routing
 - Authentication
 - Certificates
-- Configuration
+- Config
 
 Note:
 Nobody put this list on a roadmap. Nobody had a sprint planning
