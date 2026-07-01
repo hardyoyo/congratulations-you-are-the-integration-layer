@@ -32,3 +32,29 @@
   opacity: 0.55;
   color: var(--r-main-color, inherit);
 }
+
+/* Chat bubble styling for conversation digressions */
+.chat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  font-size: 0.8em;
+}
+.chat-user {
+  align-self: flex-end;
+  background: #268bd2;
+  color: white;
+  padding: 0.4em 0.9em;
+  border-radius: 1em 1em 0 1em;
+  max-width: 75%;
+  text-align: left;
+}
+.chat-robot {
+  align-self: flex-start;
+  background: #eee8d5;
+  color: #333;
+  padding: 0.4em 0.9em;
+  border-radius: 1em 1em 1em 0;
+  max-width: 75%;
+  text-align: left;
+}

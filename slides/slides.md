@@ -298,24 +298,15 @@ The system was never broken. I just didn't understand it yet.
 
 # Asking for Help
 
-<div style="text-align: left">
-
-Do you have access to the GHES v3.19.0
-OpenTelemetry documentation?
-
-:robot: no
-
-*[pastes docs]*
-*[pastes default config]*
-*[pastes example otelcol.yaml]*
-
-Help me configure otelcol.yaml to work with Datadog.
-Use MYAPIKEY as a placeholder.
-I want CPU, RAM, and storage metrics.
-
-:robot: [boop]
-
+<!-- markdownlint-disable MD013 -->
+<div class="chat">
+<div class="chat-user">Do you have access to the GHES v3.19.0 OpenTelemetry documentation?</div>
+<div class="chat-robot">:robot: no</div>
+<div class="chat-user">[pastes docs]<br>[pastes default config]<br>[pastes example otelcol.yaml]</div>
+<div class="chat-user">Help me configure otelcol.yaml to work with Datadog. Use MYAPIKEY as a placeholder. I want CPU, RAM, and storage metrics.</div>
+<div class="chat-robot">:robot: [boop]</div>
 </div>
+<!-- markdownlint-enable MD013 -->
 
 Note:
 That's it. That's the whole conversation. The model didn't have
